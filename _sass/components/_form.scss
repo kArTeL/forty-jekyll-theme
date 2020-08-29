@@ -86,14 +86,15 @@
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
-
+		border-color: _palette(fg);
+		box-shadow: 0 0 0 2px _palette(fg);
 		&:invalid {
 			box-shadow: none;
 		}
 
 		&:focus {
-			border-color: _palette(highlight);
-			box-shadow: 0 0 0 2px _palette(highlight);
+			// border-color: _palette(highlight);
+			// box-shadow: 0 0 0 2px _palette(highlight);
 		}
 	}
 
@@ -141,7 +142,7 @@
 		opacity: 0;
 		width: 1em;
 		z-index: -1;
-
+		
 		& + label {
 			@include icon;
 			color: _palette(fg);
@@ -164,21 +165,24 @@
 				text-align: center;
 				top: 0;
 				width: (_size(element-height) * 0.6);
+				box-shadow: 0 0 0 2px _palette(fg);
 			}
 		}
 
 		&:checked + label {
 			&:before {
 				background: _palette(fg-bold);
-				border-color: _palette(highlight);
+				border-color: _palette(fg);
+				box-shadow: 0 0 0 2px _palette(fg);
 				content: '\f00c';
 				color: _palette(bg);
+				
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				box-shadow: 0 0 0 2px _palette(highlight);
+				box-shadow: 0 0 0 2px _palette(fg);
 			}
 		}
 	}

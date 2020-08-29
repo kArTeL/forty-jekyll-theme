@@ -1,9 +1,9 @@
 ---
 layout: home
-title: Home
-landing-title: 'Hi, my name is Forty'
+title: Cercas Electricas El Maestro
+landing-title: 'Cercas eléctricas <strong>el Maestro</strong>'
 description: null
-image: null
+image: "/assets/images/banner.jpg"
 author: null
 show_tile: false
 ---

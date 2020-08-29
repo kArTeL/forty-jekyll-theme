@@ -2,7 +2,7 @@
 	$misc: (
 		z-index-base:		10000
 	);
-
+	$gray: #bbbbbb;
 // Duration.
 	$duration: (
 		menu:				0.35s,
@@ -30,14 +30,16 @@
 
 // Palette.
 	$palette: (
-		bg:					#242943,
-		bg-alt:				#2a2f4a,
-		fg:					#ffffff,
-		fg-bold:			#ffffff,
-		fg-light:			rgba(244,244,255,0.2),
+		brand:				#fff200,
+		header:				#000000,
+		bg:					#FFFFFF,
+		bg-alt:				#fbfbfb,
+		fg:					#0f0f0f,
+		fg-bold:			#0f0f0f,
+		fg-light:			rgba(10, 10, 10, 0.2),
 		border:				rgba(212,212,255,0.1),
 		border-bg:			rgba(212,212,255,0.035),
-		highlight:			#9bf1ff,
+		highlight:			#d8d037,
 		accent1:			#6fc3df,
 		accent2:			#8d82c4,
 		accent3:			#ec8d81,

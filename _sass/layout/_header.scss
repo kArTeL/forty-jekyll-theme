@@ -17,17 +17,17 @@
 		box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);
 		cursor: default;
 		font-weight: _font(weight-bold);
-		height: 3.25em;
+		height: 5.25em;
 		left: 0;
 		letter-spacing: _font(letter-spacing-alt);
-		line-height: 3.25em;
+		line-height: 5.25em;
 		margin: 0;
 		position: fixed;
 		text-transform: uppercase;
 		top: 0;
 		width: 100%;
 		z-index: _misc(z-index-base);
-
+		
 		.logo {
 			border: 0;
 			display: inline-block;
@@ -35,14 +35,25 @@
 			height: inherit;
 			line-height: inherit;
 			padding: 0 1.5em;
-
+			// vertical-align: bottom;
+			.header-logo {
+				max-width: 10px;
+				// width: 40px;
+				// height: 40px;
+				line-height: 1.65em;
+				margin-right: 0.325em;
+				vertical-align: middle;
+				// margin-top:em;
+				// padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
+			}
 			strong {
 				@include vendor('transition', (
 					'background-color #{_duration(transition)} ease-in-out',
 					'color #{_duration(transition)} ease-in-out'
 				));
 				background-color: _palette(fg-bold);
-				color: _palette(bg);
+				vertical-align: middle;
+				color: _palette(brand);
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -51,13 +62,14 @@
 
 			&:hover {
 				strong {
-					background-color: _palette(highlight);
+					background-color: _palette(bg);
 				}
 			}
 
 			&:active {
 				strong {
 					background-color: desaturate(darken(_palette(highlight), 15), 5);
+					
 				}
 			}
 		}

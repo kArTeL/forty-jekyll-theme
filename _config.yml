@@ -1,9 +1,10 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+
+title: Cercas Electricas El Maestro
+subtitle: "https://elmaestrocr.com"
+email: navajasegura@hotmail.com
+description: Su mejor opción en seguridad perimetral. </br> Proteja su casa, negocio y a sus seres queridos con ayuda de nosotros.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
 author:
 street_address: 1234 Somewhere Road
@@ -13,24 +14,27 @@ zip_code: 55555
 country: United States of America
 phone: (716) 555-5555
 
+#seo
+author: 
+  twitter:  "El Maestro"
+facebook:
+  app_id: "933911333770500"
 # homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 2
 
 # social settings
-500px_url:
-facebook_url:
-github_url:
-gitlab_url: https://gitlab.com/andrewbanchich
-googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-pinterest_url:
-slack_url:
+facebook_url: https://www.facebook.com/cercaselectricaselmaestro/
+instagram_url: https://www.instagram.com/cercaselectricaselmaestro/
+
 twitter_url: https://twitter.com/andrewbanchich
 
 # build settings
 markdown: kramdown
-
+# permalink: /:title/
 sass:
   style: compressed
+
+plugins:
+  # - jekyll-sitemap
+  - jekyll-seo-tag
